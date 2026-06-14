@@ -92,3 +92,10 @@ Cenário: CT-12 - Submissão do fluxo completo e redirecionamento para pagamento
 ```
 ## 3. Relatório de Execução dos Testes (Matriz de Resultados)
 
+Para complementar a documentação em Gherkin, disponibilizei a matriz de testes completa em formato de planilha. Este documento atua como o log formal de execução e contém:
+
+* **Mapeamento de Cenários:** Detalhamento do passo a passo realizado no sistema.
+* **Matriz de Status (Pass/Fail):** Visão clara e direta dos testes que obtiveram sucesso (Acertos) e dos cenários que reprovaram (Falhas/Bugs).
+* **Análise de Variáveis:** O comparativo documentado entre o Resultado Esperado e o Resultado Obtido.
+
+-> [Clique aqui para baixar a Planilha de Execução de Testes (.xlsx)](Matriz%20de%20Resultados%20-%20Testes.xlsx)
