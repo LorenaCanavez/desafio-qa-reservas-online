@@ -99,3 +99,26 @@ Para complementar a documentação em Gherkin, disponibilizei a matriz de testes
 * **Análise de Variáveis:** O comparativo documentado entre o Resultado Esperado e o Resultado Obtido.
 
 -> [Clique aqui para baixar a Planilha de Execução de Testes (.xlsx)](Matriz%20de%20Resultados%20-%20Testes.xlsx)
+
+# Automação de Reservas - Desbravador
+
+Este repositório contém um script de automação de testes *End-to-End* (E2E) para o portal de reservas do Desbravador.
+
+## Arquivo do Teste
+- **`teste_automatizado_reserva_desbravador.js`**: Contém toda a lógica de navegação, preenchimento de formulários, seleção de tarifas e simulação de pagamento.
+
+## Motivação Técnica
+A escolha da linguagem **JavaScript** (com **Playwright**) foi estratégica para este projeto:
+* **Domínio e Agilidade:** Já possuo familiaridade avançada com a linguagem e a ferramenta, o que permitiu uma implementação robusta e eficiente, focada em resolver os desafios de elementos dinâmicos do portal.
+* **Resiliência:** O Playwright oferece excelentes recursos de *auto-waiting* (espera automática), fundamentais para lidar com as requisições AJAX e componentes dinâmicos (como modais e carregamento de tarifas) presentes no sistema do Desbravador.
+* **Manutenibilidade:** A facilidade de integração e a clareza do código em JS tornam a manutenção do fluxo de reserva mais simples e rápida conforme o site evolui.
+
+## Pré-requisitos
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
+
+## Como Executar
+1. Instale as dependências necessárias na pasta do projeto:
+   ```bash
+   npm init -y
+   npm install playwright
+   npx playwright install chromium
